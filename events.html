@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="alert('the page is reloaded')">
-    <input type="text" onchange="alert('changes are done')">
-    <input type="text" onclick="alert('changes have passed while clicking')">
-    <input type="text" onmouseover="alert('mouse is pointed on the bar')">
-    <input type="text" onmouseout="alert('mouse is taken from bar')">
-    <input type="text" onkeyup="alert('hello your key is up ')">
-    <input type="text" onkeydown="alert('hello the key is down')">
-    
-    <form action="" onsubmit="alert('submited successfully')">
-        <label for="">name</label>
-        <input type="text" required>
-        <button type="submit">click</button>
-    </form>
+<body onresize="alert('resized')" >
+    <input type="text" oninput="console.log(this.value)">
+    <input type="text" onfocus="(this.style.backgroundColor = 'red')">
+    <input type="text" onblur="(this.style.backgroundColor = 'black')">
+    <button ondblclick="alert('double clicked')">click</button>
+ <div oncontextmenu="alert('cannot open')">
+
+ </div>
+ <style>
+    div{
+        height: 100px;
+        width: 300px;
+        background-color: green;
+    }
+ </style>
+
 </body>
 </html>
